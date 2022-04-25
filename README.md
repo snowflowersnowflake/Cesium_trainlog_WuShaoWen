@@ -24,7 +24,15 @@
 * 问题二的追问4 向量化为什么可以减少gltf体积
 * 回答: https://note.youdao.com/s/5zqjCdx
 
-
+## 实战案例
+* 1.cesium主题,控件展示,只需要根据属性控制是否展示
+* https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/index.vue
+* 2.不同精度DEM合并
+* 
+* 3.cesium 地球改为其他纯色
+* https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/index_color.vue
+4.cseium 视角转换
+* https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/visualFly.vue
 
 ## 其他
 暂时完成上面的部分
@@ -33,3 +41,6 @@
 * [✔] 2022/4/22 
 * [✔] 2022/4/23 
 * [✔] 2022/4/24 
+* [✔] 2022/4/25
+*  1.地图底色改变 示例 2.视角移动 示例 3.entities模型移动位置 示例
+* 1.https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/index_color.vue 2.https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/visualFly.vue 3.https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/modalFly.vue 
