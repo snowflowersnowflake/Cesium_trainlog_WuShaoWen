@@ -31,8 +31,15 @@
 * 
 * 3.cesium 地球改为其他纯色
 * https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/index_color.vue
-4.cseium 视角转换
+* 4.cseium 视角转换
 * https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/visualFly.vue
+* 5.节省性能
+* (1).可用viewer.scene.debugShowFramesPerSecond = true; 展示当前fps帧率;
+* (2).viewer.resolutionScale =0.9; 调整画面精细度 默认1.0 
+* (3). 3DTiles 相关设置 maximumScreenSpaceError:64 //默认值16 用于判断当前层级上的三维碎片是否显示 ,值越大,显示地形越少
+* (4).画面不变化时,停止渲染 (初始化时requestRenderMode : true, 或者  viewer.scene.requestRenderMode = true
+* 6.气泡窗口  额外添加html节点显示信息 防遮挡
+* 将世界坐标转化为屏幕坐标然后赋值  https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/index.vue
 
 ## 其他
 暂时完成上面的部分
@@ -44,3 +51,7 @@
 * [✔] 2022/4/25
 *  1.地图底色改变 示例 2.视角移动 示例 3.entities模型移动位置 示例
 * 1.https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/index_color.vue 2.https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/visualFly.vue 3.https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/modalFly.vue 
+* [✔] 2022/4/26
+* 添加气泡窗口 使用html节点,世界坐标转换为屏幕坐标 https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/index.vue
+* 节省性能的一些方法
+* 加载wmts瓦片,加载天地图http://t0.tianditu.com/cva_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=cva&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles&tk=9669a91e46fd2e29bbbc8cf5130caebc  LAYER参数与前面的要同步修改,不然请求不到数据
