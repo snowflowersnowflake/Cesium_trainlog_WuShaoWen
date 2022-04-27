@@ -40,6 +40,16 @@
 * (4).画面不变化时,停止渲染 (初始化时requestRenderMode : true, 或者  viewer.scene.requestRenderMode = true
 * 6.气泡窗口  额外添加html节点显示信息 防遮挡
 * 将世界坐标转化为屏幕坐标然后赋值  https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/index.vue
+* 7.禁止摄像头进入地底
+* 尝试之后发现,目前的版本貌似不能进入地底
+* 8.修改选择指示器的样式
+* 基本的js选择dom修改,不描述
+* 9.展示自己的glb文件
+* https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/index_glb.vue.
+* 10.使用GUI控件
+* 相当于ui组件库,自己也可以做 略过
+* 11.entities与Primitive绘制管线
+* https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/primitiveORentities.vue
 
 ## 其他
 暂时完成上面的部分
@@ -55,3 +65,5 @@
 * 添加气泡窗口 使用html节点,世界坐标转换为屏幕坐标 https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/index.vue
 * 节省性能的一些方法
 * 加载wmts瓦片,加载天地图http://t0.tianditu.com/cva_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=cva&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles&tk=9669a91e46fd2e29bbbc8cf5130caebc  LAYER参数与前面的要同步修改,不然请求不到数据
+* [✔] 2022/4/27
+* 1.entities绘制面添加 图片材质 2.entities与Primitive绘制管线 https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/primitiveORentities.vue
