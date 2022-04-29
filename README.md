@@ -50,6 +50,24 @@
 * 相当于ui组件库,自己也可以做 略过
 * 11.entities与Primitive绘制管线
 * https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/primitiveORentities.vue
+* 12.限制底图显示范围
+* addImageryProvider添加底图时 rectangle:Cesium.Rectangle.fromDegrees(0,0,117,32),//最小纬度,.最小经度,最大纬度,最大经度 设置范围
+* 13.创建自定义形状
+* 
+* 14.cesium与three.js结合使用
+*
+* 15.osgb转3Dtiles
+* 工具使用,暂不处理
+* 16.射线ray
+*  通过pick方法获取到世界坐标 或者是 primitive对象 https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/pick3Dtileset.vue
+* 17.获取离线地图
+* 暂时使用线上地址,暂不处理
+* 18.自定义搜索控件
+* 内置的为 发送请求到api.cesium.com/v1/geocode/autocomplete 查询数据,如需要也可以自己添加dom处理查询,暂不处理
+* 19.3Dtiles旋转问题
+* 暂不知道是什么问题,暂不处理
+* 20.水面效果
+* https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/waterRipple.vue
 
 ## 其他
 暂时完成上面的部分
@@ -67,3 +85,8 @@
 * 加载wmts瓦片,加载天地图http://t0.tianditu.com/cva_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=cva&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles&tk=9669a91e46fd2e29bbbc8cf5130caebc  LAYER参数与前面的要同步修改,不然请求不到数据
 * [✔] 2022/4/27
 * 1.entities绘制面添加 图片材质 2.entities与Primitive绘制管线 https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/primitiveORentities.vue
+* [✔] 2022/4/28
+* 添加水波纹效果,全球或局部位置 https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/waterRipple.vue
+* 2022/4/29 
+* 1.通过pick方法获取到世界坐标 或者是 primitive对象 https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/pick3Dtileset.vue
+* 2.自定义形状矩形  未完成
