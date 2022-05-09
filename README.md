@@ -28,7 +28,7 @@
 * 1.cesium主题,控件展示,只需要根据属性控制是否展示
 * https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/index.vue
 * 2.不同精度DEM合并
-* 
+* 工具使用,暂不处理
 * 3.cesium 地球改为其他纯色
 * https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/index_color.vue
 * 4.cseium 视角转换
@@ -53,9 +53,9 @@
 * 12.限制底图显示范围
 * addImageryProvider添加底图时 rectangle:Cesium.Rectangle.fromDegrees(0,0,117,32),//最小纬度,.最小经度,最大纬度,最大经度 设置范围
 * 13.创建自定义形状
-* 
+* ×××(未完成)用GeometryAttribute函数自己定义了一个四边形,坐标顶点信息自己定义的,但是到渲染那一步出现问题了,卡着没做出来,变换矩阵一直有问题
 * 14.cesium与three.js结合使用
-*
+* ×××(未完成)
 * 15.osgb转3Dtiles
 * 工具使用,暂不处理
 * 16.射线ray
@@ -68,6 +68,10 @@
 * 暂不知道是什么问题,暂不处理
 * 20.水面效果
 * https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/waterRipple.vue
+* 21.动态改变材质
+* https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/changeMaterial.vue
+* 22.画矩形或者线 动态纹理
+* https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/dynamicTexture.vue
 
 ## 其他
 暂时完成上面的部分
@@ -90,3 +94,7 @@
 * 2022/4/29 
 * 1.通过pick方法获取到世界坐标 或者是 primitive对象 https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/pick3Dtileset.vue
 * 2.自定义形状矩形  未完成
+
+* [✔]2022/5/9
+* 1.动态改变材质 https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/changeMaterial.vue
+* 2.画矩形或者线 动态纹理  https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/dynamicTexture.vue
