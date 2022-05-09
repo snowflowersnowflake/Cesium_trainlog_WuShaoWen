@@ -100,7 +100,10 @@
 * 2.primitive和entity 画矩形或者线 动态纹理  https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/dynamicTexture.vue
 
 ## 困难记录
+
 2022.5.9:
 1.
+
 2.
+
 3.
