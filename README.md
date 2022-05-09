@@ -70,7 +70,7 @@
 * https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/waterRipple.vue
 * 21.动态改变材质
 * https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/changeMaterial.vue
-* 22.画矩形或者线 动态纹理
+* 22.entity 画矩形或者线 动态纹理
 * https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/dynamicTexture.vue
 
 ## 其他
