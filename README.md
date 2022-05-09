@@ -23,6 +23,8 @@
 * 回答: https://note.youdao.com/noteshare?id=3fb8a86cd366ef372a40d5d6e551c6eb
 * 问题二的追问4 向量化为什么可以减少gltf体积
 * 回答: https://note.youdao.com/s/5zqjCdx
+* 问题3：cesium有哪几种颜色格式？
+* 问题4：如何改变cesium中的颜色？
 
 ## 实战案例
 * 1.cesium主题,控件展示,只需要根据属性控制是否展示
@@ -100,10 +102,7 @@
 * 2.primitive和entity 画矩形或者线 动态纹理  https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/dynamicTexture.vue
 
 ## 困难记录
-
 2022.5.9:
 1.
-
 2.
-
 3.
