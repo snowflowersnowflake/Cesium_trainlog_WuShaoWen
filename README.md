@@ -89,7 +89,9 @@
 * [✔] 2022/4/24 
 * [✔] 2022/4/25
 *  1.地图底色改变 示例 2.视角移动 示例 3.entities模型移动位置 示例
-* 1.https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/index_color.vue 2.https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/visualFly.vue 3.https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/modalFly.vue 
+* 1.https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/index_color.vue
+* 2.https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/visualFly.vue 
+* 3.https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/modalFly.vue 
 * [✔] 2022/4/26
 * 添加气泡窗口 使用html节点,世界坐标转换为屏幕坐标 https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/index.vue
 * 节省性能的一些方法
