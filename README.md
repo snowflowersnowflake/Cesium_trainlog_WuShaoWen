@@ -24,9 +24,12 @@
 * 问题二的追问4 向量化为什么可以减少gltf体积
 * 回答: https://note.youdao.com/s/5zqjCdx
 * 问题3：cesium有哪几种颜色格式？
-* 1.cesium默认的几种:如Cesium.Color.RED 2.16进制颜色设置 如:Cesium.Color.fromCssColorString('#67ADDF') 3.rgba 如:Cesium.Color(1,0.1,0.5,0.5) 4.随机颜色 Cesium.Color.fromRandom()
+* 1.cesium默认的几种:如Cesium.Color.RED 
+* 2.16进制颜色设置 如:Cesium.Color.fromCssColorString('#67ADDF') 
+* 3.rgba 如:Cesium.Color(1,0.1,0.5,0.5) 4.随机颜色 Cesium.Color.fromRandom()
 * 问题4：如何改变cesium中的颜色？
-* 1.primitive的纹理属性material>uniform>color 来控制颜色 2.entity 中的color控制颜色 如:添加model时,entity.model.color = Cesium.Color.fromRandom();
+* 1.primitive的纹理属性material>uniform>color 来控制颜色 
+* 2.entity 中的color控制颜色 如:添加model时,entity.model.color = Cesium.Color.fromRandom();
 
 ## 实战案例
 * 1.cesium主题,控件展示,只需要根据属性控制是否展示
