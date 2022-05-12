@@ -24,7 +24,9 @@
 * 问题二的追问4 向量化为什么可以减少gltf体积
 * 回答: https://note.youdao.com/s/5zqjCdx
 * 问题3：cesium有哪几种颜色格式？
-* 1.cesium默认的几种:如Cesium.Color.RED 2.16进制颜色设置 如:Cesium.Color.fromCssColorString('#67ADDF') 3.rgba 如:Cesium.Color(1,0.1,0.5,0.5) 4.随机颜色 Cesium.Color.fromRandom()
+* 1.cesium默认的几种:如Cesium.Color.RED 
+* 2.16进制颜色设置 如:Cesium.Color.fromCssColorString('#67ADDF') 
+* 3.rgba 如:Cesium.Color(1,0.1,0.5,0.5) 4.随机颜色 Cesium.Color.fromRandom()
 * 问题4：如何改变cesium中的颜色？
 * 1.primitive的纹理属性material>uniform>color 来控制颜色 2.entity 中的color控制颜色 如:添加model时,entity.model.color = Cesium.Color.fromRandom();
 * 问题5: 材质material的原理
@@ -94,7 +96,9 @@
 * [✔] 2022/4/24 
 * [✔] 2022/4/25
 *  1.地图底色改变 示例 2.视角移动 示例 3.entities模型移动位置 示例
-* 1.https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/index_color.vue 2.https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/visualFly.vue 3.https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/modalFly.vue 
+* 1.https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/index_color.vue
+* 2.https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/visualFly.vue 
+* 3.https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/modalFly.vue 
 * [✔] 2022/4/26
 * 添加气泡窗口 使用html节点,世界坐标转换为屏幕坐标 https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/index.vue
 * 节省性能的一些方法
@@ -117,6 +121,9 @@
 
 ## 困难记录
 2022.5.9:
+
 1.cesium构建自定义形状的矩形,用GeometryAttribute函数自己定义了一个四边形,坐标顶点信息自己定义的,但是到渲染那一步出现问题了,卡着没做出来,变换矩阵一直有问题
+
 2.cesium和three.js结合使用,分开渲染是没问题的,结合起来使用目前还没实现
+
 3.加载飞机模型,如果高度低了可能会卡进地底这个问题,不知道是否是框架问题
