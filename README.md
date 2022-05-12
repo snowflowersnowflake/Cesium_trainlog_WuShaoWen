@@ -27,6 +27,14 @@
 * 1.cesium默认的几种:如Cesium.Color.RED 2.16进制颜色设置 如:Cesium.Color.fromCssColorString('#67ADDF') 3.rgba 如:Cesium.Color(1,0.1,0.5,0.5) 4.随机颜色 Cesium.Color.fromRandom()
 * 问题4：如何改变cesium中的颜色？
 * 1.primitive的纹理属性material>uniform>color 来控制颜色 2.entity 中的color控制颜色 如:添加model时,entity.model.color = Cesium.Color.fromRandom();
+* 问题5: 材质material的原理
+* 回答: Cesium中的Material类的内部机制是通过一种json格式的Fabric对象来表达物体的外观特征，而这些外观特征是由漫反射(diffuse)、镜面反射(specular)、法向量(normal)、自发光(emission)以及透明度（alpha）组合（即一个Components）而成
+* 问题6: 材质material设置的几种方式
+* 回答: https://note.youdao.com/s/1LulXNed
+* 问题7: 什么是顶点着色器,片元着色器,有哪些方法?
+* 回答:
+* 问题8: cesium控制相机的几种方式
+* 回答: https://note.youdao.com/s/b84diA4W
 
 ## 实战案例
 * 1.cesium主题,控件展示,只需要根据属性控制是否展示
@@ -102,6 +110,10 @@
 * [✔]2022/5/9
 * 1.动态改变材质 https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/changeMaterial.vue
 * 2.primitive和entity 画矩形或者线 动态纹理  https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/dynamicTexture.vue
+
+* [✔]2022/5/12
+* 问题5: 材质material的原理 问题6: 材质material设置的几种方式
+
 
 ## 困难记录
 2022.5.9:
