@@ -86,6 +86,9 @@
 * https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/changeMaterial.vue
 * 22.entity和primitive 画矩形或者线 动态纹理
 * https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/dynamicTexture.vue
+* 31.geoJson点样式,修改
+* https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/geoJson.vue
+
 
 ## 其他
 暂时完成上面的部分
@@ -118,6 +121,9 @@
 * [✔]2022/5/12
 * 问题5: 材质material的原理 问题6: 材质material设置的几种方式
 
+* 2022/5/13
+* 1.geoJson 添加全国省会点样式,并修改 https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/geoJson.vue
+
 
 ## 困难记录
 2022.5.9:
@@ -127,3 +133,6 @@
 2.cesium和three.js结合使用,分开渲染是没问题的,结合起来使用目前还没实现
 
 3.加载飞机模型,如果高度低了可能会卡进地底这个问题,不知道是否是框架问题
+
+2022.5.13
+1.实现粒子效果
