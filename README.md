@@ -124,6 +124,10 @@
 * 2022/5/13
 * 1.geoJson 添加全国省会点样式,并修改 https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/geoJson.vue
 
+* 2022/5/16
+* 基本的烟花粒子效果  https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/particle.vue
+* 限制视角范围,暂2d  https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/perspectiveRange.vue
+
 
 ## 困难记录
 2022.5.9:
