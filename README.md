@@ -121,12 +121,27 @@
 * [✔]2022/5/12
 * 问题5: 材质material的原理 问题6: 材质material设置的几种方式
 
-* 2022/5/13
+* [✔]2022/5/13
 * 1.geoJson 添加全国省会点样式,并修改 https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/geoJson.vue
 
-* 2022/5/16
+* [✔]2022/5/16
 * 基本的烟花粒子效果  https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/particle.vue
 * 限制视角范围,暂2d  https://github.com/wusjaowen/cesium-dome/blob/main/src/page/login/perspectiveRange.vue
+
+* 2022/5/17
+* 矩阵变换偏移
+const tileset_center = tileset.boundingSphere.center; //(tileset=>模型)模型中心  经纬度  Cartesian3
+const frompoint_to_world_matrix = Cesium.Transforms.eastNorthUpToFixedFrame(tileset_center); // Matrix4
+const local_translation = new Cesium.Cartesian3(310, -140, 10); // 向模型中心为原点，正北为y，正东为x，地心朝上为z分别平移 310、-140、10米
+const result = new Cesium.Cartesian3(0,0,0);
+Cesium.Matrix4.multiplyByPoint(frompoint_to_world_matrix, local_translation, result); // 转换矩阵左乘局部平移向量，结果存储在 result 中，结果是世界坐标下的平移终点向量
+//转换之后的result为经纬度 Cartesian3
+const targetpoint_to_world_matrix = Cesium.Transforms.eastNorthUpToFixedFrame(result);
+//移动前的变换矩阵 frompoint_to_world_matrix
+//移动后的变换矩阵 targetpoint_to_world_matrix
+
+* Cesium.Math.toRadians 角度转换为弧度  Cesium.Math.toRadians 弧度转化为角度
+* 设置模型朝向某个位置,未实现
 
 
 ## 困难记录
