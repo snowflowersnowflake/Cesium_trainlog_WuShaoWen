@@ -154,4 +154,8 @@ const targetpoint_to_world_matrix = Cesium.Transforms.eastNorthUpToFixedFrame(re
 3.加载飞机模型,如果高度低了可能会卡进地底这个问题,不知道是否是框架问题
 
 2022.5.13
-1.实现粒子效果
+1.实现粒子效果,实现了一个基本的烟花效果
+
+2022.5.18
+1.动态控制实体朝向
+2.矩阵变换相关操作
